@@ -1,0 +1,131 @@
+/* body  */
+body {
+        background-color: antiquewhite;
+
+}
+
+.navbar {
+
+}
+
+.fontspecial {
+       text-shadow: 1px 1px 1px white;
+
+}
+
+.fontspecialaddress {
+           text-shadow: 0.5px 0px 0px black;
+        
+}
+
+.titleaddress {
+    margin-top: 30px;
+}
+.addresstext {
+    margin-top: 20px;
+}
+
+.tablewidth {
+    width: 100px;
+}
+.title {
+    background-color: antiquewhite;
+    min-width: 100%;
+}
+ hr {
+   border-top: 1px solid red; 
+     width: 70%;
+     margin: 0;
+}
+
+.toptext {
+    padding-top: 20px;
+}
+
+.carouss {
+    
+    min-width: 100%;
+    background-color: lightgoldenrodyellow;
+
+}
+
+
+.carousel {
+    max-width: 80%;
+    margin: auto;
+    background-color: ;
+   
+}
+
+.carousel-inner {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: beige;
+    
+    
+    
+}
+ .carousel-inner > .item > img{
+      width: 70%;
+      margin: auto;
+  }
+ 
+.imgcircle1 {
+    min-width: 100%;
+    background-color: #A1D490;
+  
+    
+}
+
+.imgcircle {
+   padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+      
+}
+
+figcaption {
+   padding-top: 20px;
+   padding-left: 5px;
+   text-shadow: .5px 0px 0px white;
+   font-size: 2em;
+  
+}
+
+.container-map {
+    
+    min-width: 100%;
+    background-color: burlywood;
+    padding-bottom: 50px;
+    
+}
+.map {
+   
+     position: relative;
+    float: left;
+    margin-top: 50px;
+}
+
+
+@media (max-width:767px){
+    
+    .imgrub {
+        display: none;
+        
+    }
+    
+}
+
+@media (max-width:1100px){
+    .introtext {
+        position: relative;
+        top: -20px;
+    }
+}
+
+.copyright {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: 1.2em;
+}
