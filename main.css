@@ -129,3 +129,19 @@ figcaption {
     text-align: center;
     font-weight: 1.2em;
 }
+
+
+/* Catering menu */
+
+.cateringmenu {
+    margin-top: 100px;
+}
+
+.cateringa {
+    color: black;
+    font-weight: bold;
+}
+
+.cateringcontent {
+    padding-top: 30px;
+}
