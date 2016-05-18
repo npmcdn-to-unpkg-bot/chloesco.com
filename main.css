@@ -151,9 +151,11 @@ figcaption {
 
 .cafemenu {
     margin-top: 50px;
+    padding-top: 20px;
     background-color: lightgoldenrodyellow;
     padding-left: 40px;
     padding-right: 30px;
+    padding-bottom: 50px;
 }
 
 .cafeproduct {
@@ -164,4 +166,28 @@ figcaption {
 
 .cafeitems {
     box-shadow: 5px 5px 2px #888888;
+}
+
+.cafemenu1 {
+    padding-top: 30px;
+    background-color: lightgreen;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+}
+
+.cafemenu2 {
+    padding-top: 30px;
+    background-color: lightgoldenrodyellow;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+}
+
+.cafemenu3 {
+    padding-top: 30px;
+    background-color: orange;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-bottom: 50px;
 }
