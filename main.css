@@ -135,6 +135,7 @@ figcaption {
 
 .cateringmenu {
     margin-top: 100px;
+    margin-bottom: 50px
 }
 
 .cateringa {
@@ -144,4 +145,23 @@ figcaption {
 
 .cateringcontent {
     padding-top: 30px;
+}
+
+/* cafe menu */
+
+.cafemenu {
+    margin-top: 50px;
+    background-color: lightgoldenrodyellow;
+    padding-left: 40px;
+    padding-right: 30px;
+}
+
+.cafeproduct {
+    width: 95%;
+    margin-top: 75px;
+    margin-left: 20px;
+}
+
+.cafeitems {
+    box-shadow: 5px 5px 2px #888888;
 }
