@@ -191,3 +191,115 @@ figcaption {
     padding-right: 30px;
     padding-bottom: 50px;
 }
+
+/* about us page */
+
+.aboutustitle {
+    text-align: center;
+}
+
+.aboutcontainer {
+    margin-top: 50px;
+}
+
+.masonry {
+   
+    border: 0;
+}
+.chloesimg {
+    position: relative;
+    float: left;
+}
+.chloesimgr {
+    position: relative;
+    float: right;
+}
+.chloestory {
+  height: 220px;
+    background-color: rosybrown;
+    padding: 10px 20px 20px 320px;
+    
+}
+
+.chloestory2 {
+  height: 300px;
+    background-color: coral;
+    padding: 1px 20px 20px 320px;
+    
+}
+
+.chloestory3 {
+  height: 220px;
+    background-color:rosybrown;
+    padding: 1px 20px 20px 20px;
+    
+}
+
+@media (max-width: 995px) {
+    .chloesimg { 
+        display: none;
+        }
+    .chloesimgr {
+        display: none;
+    }
+    .chloestory {
+      padding: 10px 20px 20px 20px;  
+        height: 220px;
+    }
+    
+    .chloestory2 {
+      padding: 10px 20px 20px 20px;  
+        height: 220px;
+    }
+    
+    .chloestory3 {
+      padding: 10px 20px 20px 20px;  
+        height: 220px;
+    }
+}
+
+@media (max-width: 680px) {
+    .chloesimg { 
+        display: none;
+        }
+    .chloesimgr {
+        display: none;
+    }
+    .chloestory {
+      padding: 10px 20px 20px 20px;  
+        height: 300px;
+    }
+    
+    .chloestory2 {
+      padding: 10px 20px 20px 20px;  
+        height: 300px;
+    }
+    
+    .chloestory3 {
+      padding: 10px 20px 20px 20px;  
+        height: 300px;
+    }
+}
+
+@media (max-width: 450px) {
+    .chloesimg { 
+        display: none;
+        }
+    .chloesimgr {
+        display: none;
+    }
+    .chloestory {
+      padding: 10px 20px 20px 20px;  
+        height: 450px;
+    }
+    
+    .chloestory2 {
+      padding: 10px 20px 20px 20px;  
+        height: 450px;
+    }
+    
+    .chloestory3 {
+      padding: 10px 20px 20px 20px;  
+        height: 450px;
+    }
+}
