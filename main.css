@@ -303,3 +303,42 @@ figcaption {
         height: 450px;
     }
 }
+
+/* soup calendar */
+
+.nulldate {
+    background-color: dimgray;
+    text-align: center;
+    border: 1px solid black;
+    height: 80px;
+    width: 180px;
+}
+
+.ondate {
+    text-align: center;
+    border: 1px solid black;
+    height: 80px;
+    background-color: white;
+    width: 180px;
+}
+
+.ondate1 {
+    text-align: center;
+    border: 1px solid black;
+    height: 80px;
+    background-color: lightcoral;
+    width: 180px;
+}
+.calendar {
+    background-color: lightgreen;
+}
+.rowcalendar {
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    
+}
+
+.datebold {
+    font-weight: bold;
+}
