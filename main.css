@@ -1,6 +1,6 @@
 /* body  */
 body {
-        background-color: antiquewhite;
+        background-color: #FAEBD7;
 
 }
 
@@ -28,9 +28,16 @@ body {
 .tablewidth {
     width: 100px;
 }
-.title {
-    background-color: antiquewhite;
+
+.titlemain {
+    background-color: #FAEBD7;
     min-width: 100%;
+    padding-bottom: 20px;
+}
+.title {
+    background-color: #FAEBD7;
+    min-width: 100%;
+   
 }
  hr {
    border-top: 1px solid red; 
@@ -45,7 +52,7 @@ body {
 .carouss {
     
     min-width: 100%;
-    background-color: lightgoldenrodyellow;
+    background-color: #FAFAD2;
 
 }
 
@@ -72,7 +79,7 @@ body {
  
 .imgcircle1 {
     min-width: 100%;
-    background-color: #A1D490;
+    background-color: #FAEBD7;
   
     
 }
@@ -92,10 +99,18 @@ figcaption {
   
 }
 
+.linkround {
+    text-decoration: none;
+    color: #000000;
+}
+
+a.linkround:hover  {
+    text-decoration: none;
+}
 .container-map {
     
     min-width: 100%;
-    background-color: burlywood;
+    background-color: #FAFAD2;
     padding-bottom: 50px;
     
 }
@@ -130,12 +145,18 @@ figcaption {
     font-weight: 1.2em;
 }
 
+.link {
+    color: black;
+    font-weight: bold;
+}
 
 /* Catering menu */
 
 .cateringmenu {
     margin-top: 100px;
-    margin-bottom: 50px
+    margin-bottom: 50px;
+    background-color: beige;
+    padding-bottom: 50px;
 }
 
 .cateringa {
@@ -186,8 +207,334 @@ figcaption {
 
 .cafemenu3 {
     padding-top: 30px;
-    background-color: orange;
+    background-color: lightgreen;
     padding-left: 40px;
     padding-right: 30px;
     padding-bottom: 50px;
+}
+
+.cafeitems {
+    height: 480px;
+}
+
+.textitem {
+    font-weight: bolder;
+}
+
+.textdescription {
+    font-style: italic;
+}
+/* about us page */
+
+.aboutustitle {
+    text-align: center;
+}
+
+.aboutcontainer {
+    margin-top: 50px;
+}
+
+.masonry {
+   
+    border: 0;
+}
+.chloesimg {
+    position: relative;
+    float: left;
+}
+.chloesimgr {
+    position: relative;
+    float: right;
+}
+.chloestory {
+  height: 220px;
+    background-color: rosybrown;
+    padding: 10px 20px 20px 320px;
+    
+}
+
+.chloestory2 {
+  height: 300px;
+    background-color: coral;
+    padding: 1px 20px 20px 320px;
+    
+}
+
+.chloestory3 {
+  height: 220px;
+    background-color:rosybrown;
+    padding: 1px 20px 20px 20px;
+    
+}
+
+@media (max-width: 995px) {
+    .chloesimg { 
+        display: none;
+        }
+    .chloesimgr {
+        display: none;
+    }
+    .chloestory {
+      padding: 10px 20px 20px 20px;  
+        height: 220px;
+    }
+    
+    .chloestory2 {
+      padding: 10px 20px 20px 20px;  
+        height: 220px;
+    }
+    
+    .chloestory3 {
+      padding: 10px 20px 20px 20px;  
+        height: 220px;
+    }
+}
+
+@media (max-width: 680px) {
+    .chloesimg { 
+        display: none;
+        }
+    .chloesimgr {
+        display: none;
+    }
+    .chloestory {
+      padding: 10px 20px 20px 20px;  
+        height: 300px;
+    }
+    
+    .chloestory2 {
+      padding: 10px 20px 20px 20px;  
+        height: 300px;
+    }
+    
+    .chloestory3 {
+      padding: 10px 20px 20px 20px;  
+        height: 300px;
+    }
+}
+
+@media (max-width: 450px) {
+    .chloesimg { 
+        display: none;
+        }
+    .chloesimgr {
+        display: none;
+    }
+    .chloestory {
+      padding: 10px 20px 20px 20px;  
+        height: 450px;
+    }
+    
+    .chloestory2 {
+      padding: 10px 20px 20px 20px;  
+        height: 450px;
+    }
+    
+    .chloestory3 {
+      padding: 10px 20px 20px 20px;  
+        height: 450px;
+    }
+}
+
+/* soup calendar */
+
+.nulldate {
+    background-color: dimgray;
+    text-align: center;
+    border: 1px solid black;
+    height: 80px;
+    width: 180px;
+}
+
+.ondate {
+    text-align: center;
+    border: 1px solid black;
+    height: 80px;
+    background-color: white;
+    width: 180px;
+}
+
+.ondate1 {
+    text-align: center;
+    border: 1px solid black;
+    height: 80px;
+    background-color: lightcoral;
+    width: 180px;
+}
+.calendar {
+    background-color: lightgreen;
+}
+.rowcalendar {
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    
+}
+
+.datebold {
+    font-weight: bold;
+}
+
+.soupdujour {
+    margin: 0 auto;
+    margin-top: 50px;
+   
+}
+
+.mainsoup {
+    border-radius: 20px;
+    margin: auto;
+    width: 350px;
+    text-align: center;
+    border: 3px black double;
+    box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
+}
+
+/* Direction page */
+
+.fontspecialdirection {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.leftfindus {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.findusmap {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background-color: beige;
+    padding: 40px 20px 50px 20px;
+}
+
+/* Press page */
+
+.intropress {
+    margin-bottom: 50px;
+}
+.pressarticle {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 25px;
+    background-color: goldenrod;
+}
+.textarticle {
+    padding-top: 30px;
+}
+.recipetitle {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.pressarticle1 {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 25px;
+    background-color: lightcoral;
+}
+
+.cafeitems {
+    box-shadow: 3px 3px 1px #000000;
+}
+
+/* Recipe image */
+
+.leftboxrecipe {
+    padding-top: 50px;
+}
+.boximage {
+    margin: 0 auto;
+    width: 80%;
+    
+    
+    
+}
+.recipeimage {
+    -webkit-border-radius: 15px 15px 0px 0px;
+    -moz-border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
+   
+}
+
+
+.reciperight {
+    background-color: beige;
+    margin-top: -20px;
+    padding-top: 50px;
+   
+}
+
+.inforecipebox {
+    background-color: white;
+    width: 80%;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 10px;
+    margin: 0 auto;
+     -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.textimage {
+    font-weight: bold;
+    font-size: 1.1em;
+    
+}
+
+.textfacebook {
+    font-size: .9em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.tweetpin {
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+.recipetext {
+    padding-top: 50px;
+    padding-left: 35px;
+    background-color: white;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+.ingredients {
+    background-color: darksalmon;
+     -webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+    padding-top: 5px;
+    
+}
+
+.hringredients {
+    width: 100%;
+    color: black;
+}
+
+.spaningredients {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.button {
+    display: block;
+   padding-top: 50px;
+  padding-left: 30px;
+    
+}
+
+.listrecipe {
+    margin-top: 100px;
+}
+.imagesrecipe {
+    margin-top: 20px;
 }
