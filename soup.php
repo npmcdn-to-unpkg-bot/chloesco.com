@@ -42,13 +42,12 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Chloe's in the press</a></li>
-            <li><a href="#">Recipes </a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+            <li><a href="press.html">Chloe's in the press</a></li>
+            <li><a href="recipe.html">Recipes </a></li>
+              <li role="separator" class="divider"></li>
+            <li><a href="soup.html">Soup Schedule</a></li>
+            
+            
           </ul>
         </li>
       </ul>
@@ -67,7 +66,7 @@
             <div class=" col-sm-10 introtext">
                 <h1 class="fontspecial"> Chlo&eacute;'s Cafe Soup Calendar</h1>
                 <hr> 
-                <p class="toptext fontspecial"> Our catering menu is diverse and will please all your guests. Our catering menu is diverse and will please all your guests. Our catering menu is diverse and will please all your guests. Our catering menu is diverse and will please all your guests. Our catering menu is diverse and will please all your guests. Our catering menu is diverse and will please all your guests. Our catering menu is diverse and will please all your guests. Our catering menu is diverse and will please all your guests. Our catering menu is diverse and will please all your guests. Our catering menu is diverse and will please all your guests. Our catering menu is diverse and will please all your guests.  </p>
+                <p class="toptext fontspecial"> Chlo&eacute;'s has developed over the years a reputation for the quality of our soup.  Hence, you will not be surprised to learn that our soup of the day is made every morning from scratch in our cuisine.  We offer a different soup everyday. The vast majority of our soups are gluten free and their recipes take insiration from various culinary tradition such as our Provencal inspired <span class="italicbold"> Soupe au Pistou. </span>. <br>  Two sizes are available at the restaurant or to go: the cup (or 12 oz) is $5.25 and the bowl (or 16oz) is $6.25.  The soup of the day is available as well as for catering order (when ordered at least the day before).  Visit our <a href="catering.html" > catering page </a> for more information. </p>
                 
         </div>
     
@@ -128,22 +127,27 @@ while ($soupid = $result->fetch_assoc()){
 }
  
        
-  for ($p=1; $p <= $count1; $p++){
+  for ($p=0; $p < $count1; $p++){
       $date1 = mktime(0,0,0,$ii,$p);
       $j1 = getdate($date1);
       $mday1 = $j1['mday'];
       $weekday1 = $j1['weekday'];
+      $dateext = date('S',$date1);
       $month1 = $j1['month'];
       $month = $j1['mon'];
       
       if ($ij == $mday1 && $ii == $month) {
          
-          echo "<div class='mainsoup'> <h3>".$weekday1.", ".$month1." ".$mday1."</h3> <br><br>";
-         $f = $p+1;
+          echo "<div class='mainsoup'> <h3>".$weekday1.", ".$month1." ".$mday1.$dateext."</h3> <br><br>";
+           
+       //  $f = $p+1;
           
-         
+        
               for ($sd = 0; $sd < $count; $sd++){
-                if ($soupidf[$f] == $id[$sd]){
+                 
+  
+                if ($soupidf[$p-1] == $id[$sd]){
+                  
                     echo $name[$sd]."<br><br>";
                     echo $picture[$sd];
                     echo "<br><br>".$vegetarian[$sd].$gluten[$sd]."</div>";
@@ -176,32 +180,35 @@ $m = 1;
         $weekday = $j['weekday'];
         $month = $j['month'];
         $mday = $j['mday'];
+         $dateext1 = date('S',$date);
         if ($soupidf[$s] == 0)
         {
-            echo "<td class='nulldate'>  </td>";
-           
+            echo "<td class='nulldate'>  <p class='datebold'>".$weekday.", ".$month."  ".$mday.$dateext1. "</p> </td>";
+           $m++;
         }
         else {
         
             if ($mday == $ij){
-                echo "<td class='ondate1'> <p class='datebold'>".$weekday.", ".$month."  ".$mday. "</p>";
+                echo "<td class='ondate1'> <p class='datebold'>".$weekday.", ".$month."  ".$mday.$dateext1. "</p>";
+               
                 $m++;
                 for ($cc=0; $cc < $count; $cc++){
                 if ($soupidf[$s] == $id[$cc]){
-                    echo $description[$cc];
-                    echo "<br>".$vegetarian[$cc].$gluten[$cc];
+                    echo "<span class='italicbold'>".$description[$cc]."</span>";
+                    echo "<br>".$vegetarian[$cc]."  ".$gluten[$cc];
                     
                 }
             }
                  echo "</td>";
             }
             else {
-            echo "<td class='ondate'> <p class='datebold'>".$weekday.", ".$month."  ".$mday. "</p>";
+            echo "<td class='ondate'> <p class='datebold'>".$weekday.", ".$month."  ".$mday.$dateext1. "</p>";
+               
                 $m++;
             for ($cc=0; $cc < $count; $cc++){
                 if ($soupidf[$s] == $id[$cc]){
-                    echo $description[$cc];
-                    echo "<br>".$vegetarian[$cc].$gluten[$cc];
+                echo "<span class='italicbold'>".$description[$cc]."</span>";               
+                echo "<br>".$vegetarian[$cc]."  ".$gluten[$cc];
                 }
             }
                  echo "</td>";
