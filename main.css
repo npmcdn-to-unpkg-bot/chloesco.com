@@ -453,7 +453,7 @@ padding-right: 20px;
 }
 
 .findusmap {
-    margin-bottom: 50px;
+   
     margin-top: 50px;
     background-color: beige;
     padding: 40px 20px 50px 20px;
@@ -586,4 +586,19 @@ padding-right: 20px;
 }
 .imagesrecipe {
     margin-top: 20px;
+}
+
+.recipetextitem { 
+font-weight: bold}
+
+.recipetextitem1 { 
+font-weight: bold;
+padding-bottom: 40px;}
+
+.pressarticlerecipe {
+    
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+    background-color: goldenrod;
 }
